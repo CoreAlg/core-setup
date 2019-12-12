@@ -1,0 +1,30 @@
+{
+    "name": "mizanur/core-setup",
+    "description": "This will prepare core functionalities.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mizanur Rahman",
+            "email": "mizan3008@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoreSetup\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CoreSetup\\CoreSetupServiceProvider"
+            ]
+        }
+    }
+}
